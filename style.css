@@ -182,10 +182,33 @@ body {
 }
 
 .card-horizontal {
-  width: 330px;
-  min-height: 112px;
+  width: min-content;
+  min-height: min-content;
   background-color: #171918;
   border-radius: 40px;
   border-width: 0;
+  display: flex;
+  padding: 8px 12px;
+}
 
+.container-card-image {
+  text-align: left;
+  margin-right: 8px;
+}
+
+.container-card-information {
+  min-width: 168px;
+}
+
+.container-card-name {
+  color: white;
+  text-align: left;
+  font-size: 0.8vw;
+}
+
+.container-card-price {
+  padding-top: 4px;
+  color: white;
+  text-align: left;
+  font-size: 0.6vw;
 }
