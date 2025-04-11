@@ -1,0 +1,140 @@
+/* Адаптация для 1024px */
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 60px;
+  }
+  
+  .image-container img {
+    height: 300px; /* Фиксированная высота (или оставь auto) */
+  }
+}
+
+/* Адаптация для 4K (2560px+) */
+@media (min-width: 2560px) {
+  .container {
+    padding: 0 5%; /* Гибкие отступы */
+    max-width: none; /* Полная ширина экрана */
+  }
+  
+    .imageContainer {
+      max-width: none; /* Снимаем ограничение */
+    }
+  
+    .image-container img {
+      min-height: 500px; /* Увеличиваем высоту для 4K */
+      width: 100%;
+    }
+}
+
+@media (width < 950px) {
+    .button-zone {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+    }
+  }
+  
+  @media (width < 768px) {
+    .cards-row {
+      width: 100%;
+      padding-top: 20px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-right: -20px;
+    }
+  
+    .card {
+      background-color: #171918;
+      border-radius: 20px;
+      width: 31%;
+      padding-bottom: 16px;
+      flex: none;
+      max-width: none;
+      margin-right: 0px;
+    }
+  }
+  
+  @media (width < 650px) {
+    .card{
+      width: 45%;
+    }
+    .container {
+      flex-direction: column;
+    }
+  
+    .logo h1 {
+      font-size: 16px;
+    }
+  
+    .infoBlock {
+      display: flex;
+      padding-top: 10.5px;
+      padding-bottom: 10.5px;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0px;
+    }
+  }
+  
+  @media (width < 425px) {
+
+    .imageContainer {
+      display: none;
+    }
+
+    .button {
+      min-width: 90px;
+      font-size: 12px;
+    }
+
+    .button-buy {
+      min-width: 116px;
+    }
+
+    .menu {
+      padding: 12px 20px 12px 20px;
+    }
+  
+    .menu-item a {
+      font-size: 12px;
+      background-color: transparent;
+    }
+
+    .menu-item p {
+      font-size: 12px;
+      background-color: transparent;
+    }
+  
+    .container-left {
+      padding: 32px 8px 0 20px;
+    }
+
+    .card {
+      background-color: #171918;
+      border-radius: 20px;
+      width: 45%;
+      padding-bottom: 16px;
+      flex: none;
+      max-width: none;
+      margin-right: 0px;
+    }
+
+    .desc-text-card p{
+      font-size: 10.8px;
+    }
+  
+    .price-and-button-zone{
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .text-zone{
+      min-height: 135px;
+      padding: 0 0 0 0;
+    }
+
+    .pizza-size-select {
+      padding-top: 12px;
+    }
+  }
